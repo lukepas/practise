@@ -1,19 +1,34 @@
-##Next.js Practice Project
+### Project Overview 🔮
+
 Welcome to my Next.js practice project! This repository serves as a learning platform for expanding my knowledge and skills in web development.
 
-##Getting Started
-Follow these steps to get the project up and running on your local machine:
+## Prerequisites 🧰
 
-##Clone the repository:
+Before running the app, you need to have the following installed on your machine:
 
-git clone https://github.com/lukepas/practice.git
+* Node.js v20 or later
+* npm v6 or later
 
-cd practice
+### Installation 🚀
 
-npm install
+To install the app, follow these steps:
 
-##Start the development server:
+1. Clone the repository:
 
-npm run dev
-Open your browser:
-Navigate to http://localhost:3000 to view the application.
+   `git clone https://github.com/lukepas/practise.git`
+
+   `cd practise`
+   
+2. Install the dependencies:
+
+   `npm install`
+
+3. Start the development server:
+
+   `npm run dev`
+   
+4. Open your browser:
+
+   `Navigate to http://localhost:3000 to view the application.`
+
+
