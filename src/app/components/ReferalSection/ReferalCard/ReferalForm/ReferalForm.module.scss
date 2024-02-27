@@ -1,0 +1,79 @@
+@import "../../../../styles/variables";
+
+.referal-input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .referal-input-wrapper {
+    position: relative;
+
+    .referal-input,
+    .copy-input {
+      padding: 20px;
+      border: 1px solid $primary-text;
+      border-radius: 8px;
+      width: 100%;
+      padding-left: 60px;
+      color: $secondary-text-dark;
+      font-size: 20px;
+    }
+    
+    .copy-input {
+      padding: 20px;
+    }
+
+    .referal-input-icon {
+      position: absolute;
+      left: 20px;
+      top: 23px;
+    }
+  }
+
+  .referal-input-success-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .referal-input-success {
+      color: $primary-text;
+      font-weight: bold;
+    }
+  }
+
+  .referal-input-error {
+    color: $error-text;
+    font-size: 12px;
+  }
+
+  .referal-input-button {
+    background-color: $primary-main;
+    padding: 16px;
+    border: 1px solid $primary-text;
+    border-radius: 8px;
+    font-size: 20px;
+    color: $secondary-text-light;
+  }
+
+  .copy-input-button {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: $primary-main;
+    padding: 16px;
+    border: 1px solid $primary-text;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 20px;
+    color: $secondary-text-light;
+
+    @media (max-width: $mobile-break-point) {
+      position: static;
+      border-radius: 8px;
+      width: 100%;
+      margin-top: 16px;
+    }
+  }
+}

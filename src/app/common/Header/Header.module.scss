@@ -1,0 +1,80 @@
+@import "../../styles/variables";
+
+.header {
+  height: 80px;
+  border: 1px solid $primary-text;
+  display: flex;
+  align-items: center;
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $page-max-width;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+}
+
+.logo img {
+  max-width: 126px;
+}
+
+.links ul {
+  display: flex;
+  list-style-type: none;
+  gap: 52px;
+}
+
+.links li {
+  a {
+    transition: color 0.25s ease-in-out 0s;
+    text-decoration: none;
+    color: $secondary-text-darker;
+    font-size: 20px;
+  }
+
+  :hover,
+  :focus {
+    color: $primary-main;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: $mobile-break-point) {
+  .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 79px;
+    left: 0;
+    width: 100%;
+    background-color: $secondary-text-light;
+    z-index: 1;
+  }
+
+  .links.open {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $primary-text;
+    border-top: none;
+  }
+
+  .links ul {
+    flex-direction: column;
+    gap: 0;
+    padding-bottom: 8px 16px;
+  }
+
+  .links li {
+    padding: 20px;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+}

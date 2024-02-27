@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+
+.referal {
+  background-color: $seconday-main;
+  padding: 64px 16px;
+
+  .referal-wrapper {
+    max-width: $page-max-width;
+    display: flex;
+    gap: 128px;
+    margin: 0 auto;
+    align-items: center;
+
+    @media (max-width: $mobile-break-point) {
+      flex-direction: column;
+    }
+
+    .referal-card-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 64px;
+    }
+  }
+}

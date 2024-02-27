@@ -1,0 +1,59 @@
+@import "../../styles/variables";
+
+.store {
+  background-color: $primary-dark;
+
+  .store-wrapper {
+    max-width: $page-max-width;
+    margin: 0 auto;
+    display: flex;
+    gap: 16px;
+    padding: 32px;
+
+    @media (max-width: $mobile-break-point) {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .store-item-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+
+      @media (max-width: $mobile-break-point) {
+        flex-direction: column;
+      }
+
+      .store-item {
+        align-items: center;
+        display: flex;
+        border: 1px solid $primary-text;
+        border-radius: 16px;
+        padding: 16px 24px;
+        max-width: 320px;
+
+        p {
+          color: $secondary-text;
+          font-size: 16px;
+        }
+
+        h2 {
+          color: $secondary-text;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .ratings-container {
+      display: flex;
+      align-items: center;
+
+      p {
+        color: $secondary-text-light;
+        font-size: 20px;
+        padding-left: 16px;
+      }
+    }
+  }
+}
